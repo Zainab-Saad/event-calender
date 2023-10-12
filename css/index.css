@@ -1,0 +1,83 @@
+body {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+th {
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: large;
+  width: 13%;
+  height: 40px;
+}
+
+td {
+  border: 1px solid #002244;
+  width: 13%;
+  height: 40px;
+}
+
+tbody {
+  margin-top: 0;
+}
+
+.calender {
+  background-color: #3457d5;
+  color: white;
+  padding: 1%;
+  display: inline-block;
+  max-width: 91%;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(183, 131, 131, 0.2);
+  text-align: left;
+}
+
+.calender__table {
+  margin: auto;
+  border-spacing: 1em;
+  text-align: center;
+}
+
+.calender__date-month {
+  font-weight: bolder;
+  font-size: xx-large;
+  margin: 5%;
+}
+
+.previous,
+.next,
+.reset {
+  width: 10%;
+  height: 35px;
+  background-color: white;
+  color: #002244;
+  border: 0px;
+  font-weight: 600;
+}
+
+.round {
+  border-radius: 10px;
+}
+
+.btns {
+  margin: 5%;
+}
+
+.btn:hover {
+  background-color: #002244;
+  color: white;
+}
+
+.inactive {
+  color: rgb(130, 121, 121);
+}
+
+.reset {
+  width: auto;
+}
+
+::selection {
+  color: #002244;
+}
