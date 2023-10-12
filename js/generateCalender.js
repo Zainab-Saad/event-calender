@@ -27,9 +27,12 @@ const generateCalender = (month, year) => {
     }
 
     let newCell = newRow.insertCell();
-    newCell.className = "inactive";
     let newText = document.createTextNode(`${monthlastdate - i + 1}`);
-    newCell.appendChild(newText);
+    const cellBtn = document.createElement("button");
+    cellBtn.className = "date-btn inactive";
+    cellBtn.setAttribute("id", `date-btn-${count}`);
+    cellBtn.appendChild(newText);
+    newCell.appendChild(cellBtn);
 
     tbody.appendChild(newCell);
     count++;
@@ -43,7 +46,11 @@ const generateCalender = (month, year) => {
 
     let newCell = newRow.insertCell();
     let newText = document.createTextNode(`${i}`);
-    newCell.appendChild(newText);
+    const cellBtn = document.createElement("button");
+    cellBtn.className = "date-btn";
+    cellBtn.setAttribute("id", `date-btn-${count}`);
+    cellBtn.appendChild(newText);
+    newCell.appendChild(cellBtn);
 
     tbody.appendChild(newCell);
     count++;
@@ -56,9 +63,12 @@ const generateCalender = (month, year) => {
     }
 
     let newCell = newRow.insertCell();
-    newCell.className = "inactive";
     let newText = document.createTextNode(`${i - dayend + 1}`);
-    newCell.appendChild(newText);
+    const cellBtn = document.createElement("button");
+    cellBtn.className = "date-btn inactive";
+    cellBtn.setAttribute("id", `date-btn-${count}`);
+    cellBtn.appendChild(newText);
+    newCell.appendChild(cellBtn);
 
     tbody.appendChild(newCell);
     count++;
